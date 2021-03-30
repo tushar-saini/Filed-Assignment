@@ -24,3 +24,7 @@ Install the necessary packages via pip.
 Run the local web-server.
 
 ` uvicorn main:app --reload `
+
+Run tests locally
+
+`pytest`

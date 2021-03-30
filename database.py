@@ -5,6 +5,16 @@ from bson.json_util import dumps
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["mydb"]     # Create database named mydb
 
+collection = db["song"]
+collection.drop()
+
+collection = db["podcast"]
+collection.drop()
+
+collection = db["audiobook"]
+collection.drop()
+
+
 def get_instance(type, id):
     collection = db[type]
 

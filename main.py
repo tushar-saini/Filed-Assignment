@@ -28,7 +28,7 @@ def insert_song(type: str, meta: dict):
     id = db.insert_file("song", temp.convert_dict())
     return {"id": id}
 
-@app.put("/delete/{type}/{id}")
+@app.put("/delete/{type}")
 def delete_item(type: str, id: int):
     db.delete_instance(type, id)
     return {"response": 'Delete successful!'}

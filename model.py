@@ -14,7 +14,6 @@ class Song:
         self.duration = meta['duration']
         self.uploadtime = meta['uploadtime']
 
-
     def convert_dict(self):
         dict = {
             'id': self.id,
